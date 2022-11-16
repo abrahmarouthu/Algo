@@ -1,7 +1,7 @@
 public class Node
 {
     public int d;
-    public Node next;
+    public Node? next;
 
     public Node(int data)
     {
@@ -12,7 +12,7 @@ public class Node
 
 public class LinkedListClass
 {
-    public Node head = null;
+    public Node? head = null;
 
     public void AddNode(int d)
     {
@@ -58,12 +58,12 @@ public class LinkedListClass
             var travelNode = head;
             while(travelNode != null)
             {
-                if(travelNode.next.d == d)
+                if(travelNode?.next?.d == d)
                 {
                     travelNode.next = travelNode.next.next;
                     return;
                 }
-                travelNode = travelNode.next;
+                travelNode = travelNode?.next;
             }
         }
     }
