@@ -13,7 +13,6 @@
 
         public void Push(int data)
         {
-            //Console.WriteLine(top);
             if(top == MAX-1)
                 Console.WriteLine("Stack is full");
             else
@@ -28,9 +27,7 @@
             if(top == -1)
                 Console.WriteLine("Stack is empty");
             else
-            {
                 top--;
-            }
         }
 
         public void Display()
@@ -40,8 +37,6 @@
             Console.WriteLine();
         }
     }
-
-// }
 
 
 

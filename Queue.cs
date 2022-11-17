@@ -16,7 +16,6 @@ public class MyQueue
         if(rIndex >= MAX)
             Console.WriteLine("Qeueu is full");
         else {
-            //rIndex++;
             arr[rIndex] = d;
             rIndex++;
         }

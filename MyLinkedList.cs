@@ -1,19 +1,6 @@
-public class Node
-{
-    public int d;
-    public Node? next;
-
-    public Node(int data)
-    {
-        d = data;
-        next = null;
-    }
-}
-
-public class LinkedListClass
+public class StackUsingLL
 {
     public Node? head = null;
-
     public void AddNode(int d)
     {
         var newNode = new Node(d);
@@ -38,7 +25,6 @@ public class LinkedListClass
             head = newNode;
         else
         {
-            //var temp = head;
             newNode.next = head;
             head = newNode;
         }        
