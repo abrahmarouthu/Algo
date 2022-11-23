@@ -47,13 +47,13 @@
 
 // var ll = new LinkedListClass();
 // ll.Display();
-// ll.AddNode(5);
+// ll.AddNodeUsingRecursive(5);
 // ll.AddNode(10);
-// ll.Display();
+// ll.DisplayUsingRecursive();
 // ll.AddNode(15);
 // ll.AddNodeAtBeginning(2);
 // ll.AddNode(20);
-// ll.Display();
+// ll.DisplayUsingRecursive();
 // ll.DeleteNode(10);
 // ll.Display();
 // Console.ReadLine();
@@ -76,20 +76,23 @@
 // llus.Display();
 
 
-var lluq = new QueueUsingLL();
-lluq.Display();
-lluq.Enqueue(5);
-lluq.Enqueue(10);
-lluq.Enqueue(15);
-lluq.Enqueue(20);
-lluq.Enqueue(25);
-lluq.Display();
-lluq.Dequeue();
-lluq.Dequeue();
-lluq.Display();
-lluq.Dequeue();
-lluq.Dequeue();
-lluq.Display();
-lluq.Dequeue();
-lluq.Dequeue();
-lluq.Display();
+// var lluq = new QueueUsingLL();
+// lluq.Display();
+// lluq.Enqueue(5);
+// lluq.Enqueue(10);
+// lluq.Enqueue(15);
+// lluq.Enqueue(20);
+// lluq.Enqueue(25);
+// lluq.Display();
+// lluq.Dequeue();
+// lluq.Dequeue();
+// lluq.Display();
+// lluq.Dequeue();
+// lluq.Dequeue();
+// lluq.Display();
+// lluq.Dequeue();
+// lluq.Dequeue();
+// lluq.Display();
+
+var bt = new BinaryTree();
+bt.InOrder(bt.head);

@@ -1,4 +1,4 @@
-public class StackUsingLL
+public class LinkedListClass
 {
     public Node? head = null;
     public void AddNode(int d)
@@ -15,6 +15,25 @@ public class StackUsingLL
 
             travelNode.next = newNode;
         }
+    }
+
+    public void AddNodeUsingRecursive(int d) => head = AddNodeUsingRecursiveHelper(head, d);
+    // {
+    //     head = AddNodeUsingRecursiveHelper(head, d);
+    // }
+
+    public Node AddNodeUsingRecursiveHelper(Node travelNode, int d)
+    {
+        if(travelNode == null)
+        {
+            var newNode = new Node(d);
+            travelNode = newNode;
+            return travelNode;
+        }
+        else
+            travelNode.next = AddNodeUsingRecursiveHelper(travelNode.next, d);
+
+        return travelNode;
     }
 
     public void AddNodeAtBeginning(int d)
@@ -68,5 +87,22 @@ public class StackUsingLL
             }
             Console.WriteLine();
         }
+    }
+
+    public void DisplayUsingRecursive()
+    {
+        DisplayUsingRecursiveHelper(head);
+    }
+
+    public void DisplayUsingRecursiveHelper(Node node)
+    {
+        if(node == null)
+        {
+            Console.WriteLine();
+            return;
+        }
+
+        Console.Write(node.d + "->");
+        DisplayUsingRecursiveHelper(node.next);
     }
 }

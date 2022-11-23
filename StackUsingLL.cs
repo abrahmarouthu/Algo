@@ -1,4 +1,4 @@
-public class LLUsingStack
+public class StackUsingLL
 {
     public Node? head = null;
     public Node? top = null;
